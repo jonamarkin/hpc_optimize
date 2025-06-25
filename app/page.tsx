@@ -69,7 +69,7 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center gap-4">
               <Link href="/dashboard">
-                <Button variant="outline" className="hover:scale-105 transition-transform">
+                <Button variant="outline" className="hidden md:inline-flex hover:scale-105 transition-transform">
                   View Dashboard
                 </Button>
               </Link>
@@ -113,8 +113,8 @@ export default function LandingPage() {
               </Link>
               <Button
                 size="lg"
-                variant="outline"
-                className="text-lg px-8 hover:scale-105 transition-transform border-2"
+                variant="outline" 
+                className="text-lg px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:scale-105 transition-all"
               >
                 Schedule Demo
               </Button>
@@ -333,7 +333,7 @@ export default function LandingPage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button
+            <Button 
               size="lg"
               variant="outline"
               className="text-lg px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:scale-105 transition-all"
@@ -344,11 +344,11 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
+     {/* Footer */}
       <footer className="border-t py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-4 sm:gap-0 text-center">
+           <div className="flex items-center gap-2">
               <div className="h-8 w-8 bg-gradient-to-br from-primary to-primary/60 rounded-lg flex items-center justify-center shadow-lg">
                 <BarChart3 className="h-5 w-5 text-primary-foreground" />
               </div>
@@ -356,7 +356,7 @@ export default function LandingPage() {
                 HPCOptimize
               </span>
             </div>
-            <p className="text-sm text-muted-foreground">© 2024 HPCOptimize. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground mt-2 sm:mt-0">© 2024 HPCOptimize. All rights reserved.</p>
           </div>
         </div>
       </footer>
